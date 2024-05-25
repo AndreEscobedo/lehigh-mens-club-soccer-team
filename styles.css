@@ -2,11 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #FFFFFF;
+    color: #4B2E83;
 }
 
 header {
-    background-color: #003366;
-    color: white;
+    background-color: #4B2E83; /* Brown color */
+    color: #FFFFFF; /* White color */
     padding: 1em 0;
     text-align: center;
 }
@@ -22,7 +24,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -35,11 +37,46 @@ section {
 }
 
 footer {
-    background-color: #003366;
-    color: white;
+    background-color: #4B2E83;
+    color: #FFFFFF;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
-    width: 100%;
+    position: relative;
     bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.roster img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.roster .player {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.roster .player img {
+    margin-right: 1em;
+}
+
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule table, .schedule th, .schedule td {
+    border: 1px solid #4B2E83;
+}
+
+.schedule th, .schedule td {
+    padding: 0.5em;
+    text-align: left;
 }
